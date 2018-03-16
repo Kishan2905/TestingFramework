@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="10" name="Failed suite [Parallel]" parallel="tests">
+  <parameter name="environment" value="nexus_9"/>
+  <parameter name="config" value="parallel.conf.json"/>
+  <test name="SingleTestPixel(failed)" parallel="tests">
+    <parameter name="environment" value="pixel"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="scripts.UserLogin">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="userLogin"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="sendEmail"/>
+        </methods>
+      </class> <!-- scripts.UserLogin -->
+    </classes>
+  </test> <!-- SingleTestPixel(failed) -->
+  <test name="SingleTestNexus9(failed)" parallel="tests">
+    <parameter name="environment" value="nexus_9"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="scripts.UserLogin">
+        <methods>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="userLogin"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="sendEmail"/>
+        </methods>
+      </class> <!-- scripts.UserLogin -->
+    </classes>
+  </test> <!-- SingleTestNexus9(failed) -->
+</suite> <!-- Failed suite [Parallel] -->

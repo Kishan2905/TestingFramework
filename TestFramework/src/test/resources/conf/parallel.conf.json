@@ -1,0 +1,25 @@
+{
+  "server": "hub-cloud.browserstack.com",
+  "user": "kishankothari1",
+  "key": "M9MSp8YXm7RsJrpdfsLp",
+ 
+  "capabilities": {
+    "build": "testng-browserstack",
+    "name": "parallel_appium_test",
+    "browserstack.debug": true,
+     "app": "bs://b769456f321c259599040bf141044ec952402cc2",
+    "resetKeyboard": true
+  },
+ 
+  "environments": {
+    "pixel": {
+      "device": "Google Pixel"
+    },
+    "nexus_9": {
+      "device": "Google Nexus 9"
+    },
+     "galaxy": {
+      "device": "Samsung Galaxy S6"
+    }
+  }
+}

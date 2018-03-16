@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[App launched]]>
+    </line>
+    <line>
+      <![CDATA[Credentials Provided]]>
+    </line>
+    <line>
+      <![CDATA[App launched]]>
+    </line>
+    <line>
+      <![CDATA[Credentials Provided]]>
+    </line>
+  </reporter-output>
+  <suite name="Parallel" duration-ms="78645" started-at="2018-01-09T09:11:28Z" finished-at="2018-01-09T09:12:46Z">
+    <groups>
+    </groups>
+    <test name="SingleTestPixel" duration-ms="41956" started-at="2018-01-09T09:11:28Z" finished-at="2018-01-09T09:12:10Z">
+      <class name="scripts.UserLogin">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:scripts.UserLogin@57fffcd7]" name="setUp" is-config="true" duration-ms="27304" started-at="2018-01-09T14:41:28Z" finished-at="2018-01-09T14:41:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pixel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="userLogin()[pri:0, instance:scripts.UserLogin@57fffcd7]" name="userLogin" duration-ms="7479" started-at="2018-01-09T14:41:55Z" finished-at="2018-01-09T14:42:03Z">
+          <reporter-output>
+            <line>
+              <![CDATA[App launched]]>
+            </line>
+            <line>
+              <![CDATA[Credentials Provided]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:scripts.UserLogin@57fffcd7]" name="tearDown" is-config="true" duration-ms="7155" started-at="2018-01-09T14:42:03Z" finished-at="2018-01-09T14:42:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- scripts.UserLogin -->
+    </test> <!-- SingleTestPixel -->
+    <test name="SingleTestNexus9" duration-ms="78644" started-at="2018-01-09T09:11:28Z" finished-at="2018-01-09T09:12:46Z">
+      <class name="scripts.UserLogin">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:scripts.UserLogin@5702b3b1]" name="setUp" is-config="true" duration-ms="65729" started-at="2018-01-09T14:41:28Z" finished-at="2018-01-09T14:42:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[parallel.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nexus_9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="userLogin()[pri:0, instance:scripts.UserLogin@5702b3b1]" name="userLogin" duration-ms="6937" started-at="2018-01-09T14:42:34Z" finished-at="2018-01-09T14:42:40Z">
+          <reporter-output>
+            <line>
+              <![CDATA[App launched]]>
+            </line>
+            <line>
+              <![CDATA[Credentials Provided]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:scripts.UserLogin@5702b3b1]" name="tearDown" is-config="true" duration-ms="5962" started-at="2018-01-09T14:42:40Z" finished-at="2018-01-09T14:42:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="sendEmail()[pri:0, instance:scripts.UserLogin@5702b3b1]" name="sendEmail" is-config="true" duration-ms="3401" started-at="2018-01-09T14:42:46Z" finished-at="2018-01-09T14:42:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendEmail -->
+      </class> <!-- scripts.UserLogin -->
+    </test> <!-- SingleTestNexus9 -->
+  </suite> <!-- Parallel -->
+</testng-results>

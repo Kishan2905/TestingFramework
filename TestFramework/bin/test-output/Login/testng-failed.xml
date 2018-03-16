@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="10" name="Failed suite [Login]">
+  <parameter name="environment" value="Pixel"/>
+  <parameter name="config" value="single.conf.json"/>
+  <test name="HaikuJamLogin(failed)">
+    <parameter name="environment" value="Pixel"/>
+    <parameter name="config" value="single.conf.json"/>
+    <classes>
+      <class name="scripts.UserLogin">
+        <methods>
+          <include name="setUp"/>
+          <include name="userLogin"/>
+          <include name="tearDown"/>
+          <include name="sendEmail"/>
+        </methods>
+      </class> <!-- scripts.UserLogin -->
+    </classes>
+  </test> <!-- HaikuJamLogin(failed) -->
+</suite> <!-- Failed suite [Login] -->
